@@ -10,6 +10,14 @@ static class Ram{
 int memory;
 String manufacturer;
 }
+
+void display(Cpu cpu, Processor p, Ram ram){
+System.out.println("CPU price : " + cpu.price);
+System.out.println("Processor manufacturer : " + p.manufacturer);
+System.out.println("Processor core : " + p.no_of_cores);
+System.out.println("Ram memory : " + ram.memory);
+System.out.println("Ram manufacturer : " + ram.manufacturer);
+}
 }
 
 public class CpuDemo{
@@ -26,10 +34,6 @@ Cpu.Ram ram = new Cpu.Ram();
 ram.memory = 40;
 ram.manufacturer = "Samsung";
 
-System.out.println("CPU price : " + cpu.price);
-System.out.println("Processor manufacturer : " + processor.manufacturer);
-System.out.println("Processor core : " + processor.no_of_cores);
-System.out.println("Ram memory : " + ram.memory);
-System.out.println("Ram manufacturer : " + ram.manufacturer);
+cpu.display(cpu, processor, ram);
 }
 }
