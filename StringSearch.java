@@ -24,7 +24,7 @@ key = scanner.nextLine();
 
 for(int i = 0; i < n; i++){
 if(s[i].equals(key)){
-System.out.println("Element " + key + " found at index " + i+1);
+System.out.println("Element " + key + " found at index " + i++);
 b = true;
 }
 }
