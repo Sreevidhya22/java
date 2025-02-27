@@ -23,8 +23,8 @@ System.out.println("Enter the element to search");
 key = scanner.nextLine();
 
 for(int i = 0; i < n; i++){
-if(s[i] == key){
-System.out.println("Element " + key + " found at index " + i);
+if(s[i].equals(key)){
+System.out.println("Element " + key + " found at index " + i+1);
 b = true;
 }
 }
