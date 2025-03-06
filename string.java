@@ -19,13 +19,9 @@ System.out.println(txt.replace('e', 'i'));
 String txt1;
 System.out.println("\nEnter a second string:");
 txt1=sc.nextLine();
+System.out.println("\nConcatenate first and second strings:");
 System.out.println(txt.concat(txt1));
 
-
-
-
-
 }
 }
-
 
