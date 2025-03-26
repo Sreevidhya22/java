@@ -10,7 +10,7 @@ this.agencyName = agencyName;
 }
 }
 
-class Book{
+class Book extends Publisher{
 String bookName;
 String author;
 int price;
@@ -112,13 +112,13 @@ System.out.println("Invalid Category ");
 }
 
 if(litCount > 0) {
-for(int i = 0; i <= litCount; i++){
+for(int i = 0; i < litCount; i++){
 literatureBooks[i].display();
 }
 }
 
 if(ficCount > 0) {
-for(int i = 0; i <= ficCount; i++){
+for(int i = 0; i < ficCount; i++){
 fictionBooks[i].display();
 }
 }
