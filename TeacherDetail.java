@@ -6,7 +6,7 @@ String name;
 String address;
 double salary;
 
-public Employee(int empId, String name, String address, double salary){
+Employee(int empId, String name, String address, double salary){
 this.empId = empId;
 this.name = name;
 this.address = address;
@@ -18,8 +18,8 @@ class Teacher extends Employee{
 String department;
 String subject;
 
-public Teacher(int empId, String name, String address, double salary, String department, String subject){
-super(int empId,String name,String address,double salary);
+Teacher(int empId, String name, String address, double salary, String department, String subject){
+super(empId,name,address,salary);
 this.department = department;
 this.subject = subject;
 }
@@ -50,21 +50,21 @@ System.out.println("Enter Employee Id");
 int empId = sc.nextInt();
 
 System.out.println("Enter Employee Name");
-String name = sc.nextLine();
+String name = s.nextLine();
 
 System.out.println("Enter Employee address");
-String address = sc.nextLine();
+String address = s.nextLine();
 
 System.out.println("Enter Employee salary");
 double salary = sc.nextDouble();
 
 System.out.println("Enter Employee Department");
-String department = sc.nextLine();
+String department = s.nextLine();
 
 System.out.println("Enter Employee Subject");
-String subject = sc.nextLine();
+String subject = s.nextLine();
 
-teachers[i] = new Teacher(int empId,String name,String address,double salary,String department, String subject);
+teachers[i] = new Teacher(empId,name,address,salary,department,subject);
 }
 
 System.out.println("Teachers Details");
