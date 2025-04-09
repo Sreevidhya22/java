@@ -1,7 +1,7 @@
 package aritmetic;
 
-public class Addition implements Operation{
+public class Multiplication implements Operation{
 public double compute(double a, double b){
-return  a+b;
+return  a*b;
 }
 }
