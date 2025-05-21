@@ -1,6 +1,5 @@
 import java.io.*;
-import java.util.StringTokenizer;
-
+import java.util.*;
 class file
 {
 public static void main(String args[])
@@ -11,18 +10,20 @@ FileReader f1=new FileReader("number.txt");
 FileWriter f2=new FileWriter("even.txt");
 FileWriter f3=new FileWriter("odd.txt");
 int i;
-Scanner sc=new Scanner(Sysetm.in);
+Scanner sc=new Scanner(f1);
 String s=sc.nextLine();
-StringTokenizer st = new StringTokenizer(s,"");
-while(s)
+StringTokenizer st=new StringTokenizer(s, " ");
+while(st.hasMoreTokens())
 {
+String str=st.nextToken();
+i=Integer.parseInt(str);
 if(i%2==0)
 {
-f2.write(i);
+f2.write(str);
 }
 else
 {
-f3.write(i);
+f3.write(str);
 }
 }
 f1.close();
